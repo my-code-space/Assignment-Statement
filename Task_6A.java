@@ -29,7 +29,7 @@ public class Task_6A {
                 scanner.nextLine();
                 System.out.print("Enter Subject1:"); 
                 String subject1 = scanner.nextLine();
-                if(subject1.startsWith("SC-")){
+                if(subject1.startsWith("SE-")){
                     System.out.print("Enter subject1 marks :");
                     int sub1 = scanner.nextInt();
 
@@ -45,7 +45,7 @@ public class Task_6A {
                         scanner.nextLine();
                         System.out.print("Enter Subject3:"); 
                         String subject3 = scanner.nextLine();
-                        if(subject3.startsWith("SC-") && !(subject2.equals(subject3)) && !(subject1.equals(subject3))){
+                        if(subject3.startsWith("SE-") && !(subject2.equals(subject3)) && !(subject1.equals(subject3))){
                         System.out.print("Enter subject3 marks :");
                         int sub3 = scanner.nextInt();
 
