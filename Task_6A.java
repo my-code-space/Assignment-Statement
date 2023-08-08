@@ -12,7 +12,10 @@ public class Task_6A {
 
        char d = name.charAt(1);
        final String RED = "\033[31;1m";
+       final String Blue = "\033[34;1m";
+
        final String RESET = "\033[0;0m";
+       
        
        if(d >='a' && d <='z' || d>='A' && d <='Z'){
             System.out.print("Enter your age :");
@@ -34,7 +37,7 @@ public class Task_6A {
                         scanner.nextLine();
                         System.out.print("Enter Subject2:"); 
                         String subject2 = scanner.nextLine();
-                        if(!(subject1.equals(subject2)) && subject2.startsWith("SC-")  ){
+                        if(!(subject1.equals(subject2)) && subject2.startsWith("SE-")  ){
                         System.out.print("Enter subject2 marks : ");
                         int sub2 = scanner.nextInt();
 
@@ -61,7 +64,7 @@ public class Task_6A {
 
                                 String dottedline = "+--------------------+-------------------+";
                                 System.out.println(dottedline);
-                                System.out.printf("|  %-15s   |  %-15s  |\n","NAME",name);
+                                System.out.printf("|  %-15s   |  %s%-15s%s  |\n","NAME",Blue,name.toUpperCase(),RESET);
                                 System.out.println(dottedline);
                                 System.out.printf("|   %-15s  |  %-15s  |\n","AGE",age);
                                 System.out.println(dottedline);
@@ -71,9 +74,12 @@ public class Task_6A {
                                 System.out.println(dottedline);
                                 System.out.printf("| %-10s  |  %-10s   |  %-8s|\n","Subject","marks","status");
                                 System.out.println(dottedline);
+
+                                
+
                                 System.out.printf("| SC-%03d %-5s| %-10s | %-10s  |\n",Integer.valueOf(subject1.substring(3)),"",sub1,status1);
-                                System.out.printf("| SC-%03d %-5s| %-10s | %-10s  |\n",Integer.valueOf(subject2.substring(3)),"",sub1,status1);
-                                System.out.printf("| SC-%03d %-5s| %-10s | %-10s  |\n",Integer.valueOf(subject3.substring(3)),"",sub1,status1);
+                                System.out.printf("| SC-%03d %-5s| %-10s | %-10s  |\n",Integer.valueOf(subject2.substring(3)),"",sub2,status2);
+                                System.out.printf("| SC-%03d %-5s| %-10s | %-10s  |\n",Integer.valueOf(subject3.substring(3)),"",sub3,status3);
                                 System.out.println(dottedline);
 
                             }else{
